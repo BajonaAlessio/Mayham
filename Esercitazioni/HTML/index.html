@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--questo è un commento-->
+<html> 
+    <head>
+        <!--head è la parte della pagina che continene le informazioni-->
+
+        <!--Set di caratteri-->
+        <meta charset="UTF8">
+
+        <!--Responsive su mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Descrizione della pagina-->
+        <title>Pagina di esempio</title>
+
+        <!--SEO base-->
+        <meta name="description" content="Descrizione della pagina per Google">
+        <meta name="keywords" content="html, landing page, esempio">
+        <meta name="author" content="il tuo nome">
+
+        <!--Foglio di stile CSS personalizzato-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@465&display=swap" rel="stylesheet">
+
+        <!--bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <!--bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+        <!--icone bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <div class="shadow">
+        <div class="container-fluid">
+        <img src="https://dummyimage.com/1200x200/000000/ffffff" alt="image placeholder" id="top"/>
+        <!--body è la parte della pagina che contiene il contenuto-->
+        
+        
+    
+        <header>
+            <!--header contiente gli strumenti di navigazione-->
+            <nav>
+                <!--nav contiene i link di navigazione-->
+                <a href="#top">Home</a>
+                <a href="#chisiamo">Chi siamo</a>
+                <a href="#servizi">Servizi</a>
+                <a href="#contatti">Contatti</a>
+                <a href="#privacy">Privacy</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <!--main contiene il contenuto principale della pagina-->
+            <h1>benveuto nella pagina di esempio (main)</h1>
+            <h2>questo è un esempio</h2>
+            <h3>questo è un altro esempio</h3>
+            <h4>questo è un altro esempio ancora</h4>
+            <p>scritta a caso<br>scritta a caso ma a capo</p>
+            <h2>lista non ordinata (ul)</h1>
+            <ul>
+                <li>questo è un elemento della lista</li>
+                <li>questo è un altro elemento della lista</li>
+                <li>questo è un altro elemento della lista ancora</li>
+            </ul>
+
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Danger</button>
+            <button class="btn btn-custom">AAA</button>
+
+            <h2>lista ordinata (ol)</h1>
+            <ol>
+                <li><i>questo è un elemento della lista in corsivo</i></li>
+                <li>questo è un altro elemento della lista</li>
+                <li>questo è un altro elemento della lista ancora</li>
+            </ol>
+
+            
+
+            <!--esempio di componente-->
+            <div clas="alert alert-primary" role="alert">
+                alert-check
+            </div>
+
+            <!--esempio di link-->
+            <h2>link</h2>
+            <p><b>Questo è un link <a href="#">Collegamento</a>, in grassetto</b></p>
+
+            <!--esempio di sezione-->
+            <div class="shadow">
+            <section id="chisiamo" class="shadow">
+            <h2><i class="bi bi-airplane-engines-fill"></i> chi siamo</h2>
+                <p>
+                    <b>
+                        Questa è una sezione di esempio <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo amet repudiandae quibusdam et enim asperiores ducimus ab tempore eius vitae, iure harum, architecto numquam recusandae possimus optio, nesciunt nisi in.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias adipisci amet provident quibusdam quo earum reiciendis autem nostrum sunt hic obcaecati maiores et dolorem sequi, asperiores velit quidem quos?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque consequuntur reiciendis optio accusantium libero ducimus reprehenderit soluta, voluptates facilis. Blanditiis optio facilis expedita fugiat laboriosam veniam, rerum ut ratione.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit animi amet dolorum aliquam earum harum repellendus sint modi sed ipsam iusto itaque rem corrupti nemo, laudantium a quaerat perferendis ex?
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Optio quisquam itaque eum modi dignissimos <br>tempora, voluptatem perspiciatis nemo eius corrupti incidunt aliquid, mo<br>lestias, sequi accusantium praesentium atque cum voluptat<br>e adipisci!
+                        Lorem ipsum dolor sit <br>amet consectetur, adipisicing elit. Reiciend<br>is officiis error laborum quos? Dicta fugiat provident ullam illo expl<br>icabo nihil architecto iusto? Esse voluptas neque ei<br>us maxime distinctio eos blanditiis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi volu<br>ptas, pariatur incidunt, soluta error provident sit corporis fa<br>cilis maiores quos recusandae perspiciatis perferendis <br>minus at commodi? Dolor tenetur sap<br>iente sunt.
+                        Lorem ipsum dolor sit, amet consectetur adip<br>isicing elit. Magni id aperiam, possimus corporis soluta do<br>loremque voluptates consectetur nesciunt nam fugi<br>at magnam architecto, quam illo, numquam fu<br>ga adipisci omnis pariatur molestiae!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dis<br>tinctio tempore nihil harum numquam iste maiores nam adipisci ut? Consectetur eaque dignissimos, beatae<br> non quae earum maxime temporibus officia accusantium e<br>rror.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Q<br>ui a sequi mollitia fugit dicta ut repellat tempora deleniti ducimus earum laboriosam in debitis el<br>igendi, voluptatem incidunt quia rem nihil voluptate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Nisi eum veritatis ex a at possimus est unde totam corrupti perspiciatis, provident dolorum nam dolor, <br>neque blanditiis veniam officiis accusamus consequuntur!
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Deserunt, at nihil a perferendis exercitationem nulla<br> autem provident qui, est quis sed natus? Aspernatur <br>iusto facere quod amet facilis, dolorem et.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Mollitia modi tempora illum delectus. Voluptates ali<br>as enim commodi amet nobis doloremque ap<br>eriam eos optio dolore<br> ullam, officiis eaque facilis vitae quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo <br>molestiae rem tempore dolore dolor accusanti<br>um repellendus earum voluptatibus quibusdam, natus eligendi nisi reprehend<br>erit, dolorem ea ipsam aspernatur fugit <br>mollitia consequuntur.
+                    </b>    
+                </p>
+                <!--creo un collegamento ad inizio pagina-->
+                <p>
+                    <a href="#top">Torna all'inizio</a>
+                </p>
+            </section>
+            </div>
+
+            <section id="servizi">
+            <h2><i class="bi bi-wrench"></i> sezione servizi</h2>
+                <p>
+                    <b>
+                        Questa è una sezione di esempio <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium quia id. Natus repellat architecto nesciunt a recusandae excepturi, incidunt, tenetur aspernatur ipsam laboriosam error doloremque minus veniam inventore quam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem pariatur ea debitis, praesentium qui quod optio. Animi, consequatur maiores quas inventore adipisci voluptas dolor tenetur quidem, a officiis cumque ab.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, earum cupiditate laborum libero ad inventore facilis dolorum, molestiae consequuntur illo consectetur aspernatur ratione porro adipisci. Optio eos architecto voluptatem ipsam!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem provident, quis natus molestiae ratione delectus recusandae aliquid blanditiis aspernatur, assumenda quas accusantium nesciunt nihil suscipit. Laboriosam nulla architecto aliquam velit?
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Optio quisquam itaque eum modi dignissimos <br>tempora, voluptatem perspiciatis nemo eius corrupti incidunt aliquid, mo<br>lestias, sequi accusantium praesentium atque cum voluptat<br>e adipisci!
+                        Lorem ipsum dolor sit <br>amet consectetur, adipisicing elit. Reiciend<br>is officiis error laborum quos? Dicta fugiat provident ullam illo expl<br>icabo nihil architecto iusto? Esse voluptas neque ei<br>us maxime distinctio eos blanditiis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi volu<br>ptas, pariatur incidunt, soluta error provident sit corporis fa<br>cilis maiores quos recusandae perspiciatis perferendis <br>minus at commodi? Dolor tenetur sap<br>iente sunt.
+                        Lorem ipsum dolor sit, amet consectetur adip<br>isicing elit. Magni id aperiam, possimus corporis soluta do<br>loremque voluptates consectetur nesciunt nam fugi<br>at magnam architecto, quam illo, numquam fu<br>ga adipisci omnis pariatur molestiae!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dis<br>tinctio tempore nihil harum numquam iste maiores nam adipisci ut? Consectetur eaque dignissimos, beatae<br> non quae earum maxime temporibus officia accusantium e<br>rror.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Q<br>ui a sequi mollitia fugit dicta ut repellat tempora deleniti ducimus earum laboriosam in debitis el<br>igendi, voluptatem incidunt quia rem nihil voluptate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Nisi eum veritatis ex a at possimus est unde totam corrupti perspiciatis, provident dolorum nam dolor, <br>neque blanditiis veniam officiis accusamus consequuntur!
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Deserunt, at nihil a perferendis exercitationem nulla<br> autem provident qui, est quis sed natus? Aspernatur <br>iusto facere quod amet facilis, dolorem et.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Mollitia modi tempora illum delectus. Voluptates ali<br>as enim commodi amet nobis doloremque ap<br>eriam eos optio dolore<br> ullam, officiis eaque facilis vitae quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo <br>molestiae rem tempore dolore dolor accusanti<br>um repellendus earum voluptatibus quibusdam, natus eligendi nisi reprehend<br>erit, dolorem ea ipsam aspernatur fugit <br>mollitia consequuntur.
+                    
+                    </b>
+                </p>
+                <p>
+                    <a href="#top">Torna all'inizio</a>
+                </p>
+            </section>
+
+            <section id="contatti">
+            <h2><i class="bi bi-umbrella-fill"></i> sezione contatti</h2>
+                <p>
+                    <b>
+                        Questa è una sezione di esempio<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi omnis voluptas odio porro fugiat, ducimus nesciunt ipsum ipsam? Maxime nostrum minus quaerat eius nisi modi illo adipisci dolorum? 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, molestiae pariatur! In reiciendis harum sint totam adipisci unde, porro incidunt aliquam dolorem saepe quisquam facere impedit nesciunt voluptatibus perferendis repudiandae.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure cum, error quas fugiat magnam quasi odio itaque voluptates molestias? Est ut laboriosam labore. Exercitationem cum inventore ipsum laudantium deserunt dolorum.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste hic consequuntur molestias delectus vel perspiciatis tempora reiciendis voluptatibus, similique maiores voluptatem odit corporis debitis nemo? Vel ullam itaque amet nam?
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Optio quisquam itaque eum modi dignissimos <br>tempora, voluptatem perspiciatis nemo eius corrupti incidunt aliquid, mo<br>lestias, sequi accusantium praesentium atque cum voluptat<br>e adipisci!
+                        Lorem ipsum dolor sit <br>amet consectetur, adipisicing elit. Reiciend<br>is officiis error laborum quos? Dicta fugiat provident ullam illo expl<br>icabo nihil architecto iusto? Esse voluptas neque ei<br>us maxime distinctio eos blanditiis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi volu<br>ptas, pariatur incidunt, soluta error provident sit corporis fa<br>cilis maiores quos recusandae perspiciatis perferendis <br>minus at commodi? Dolor tenetur sap<br>iente sunt.
+                        Lorem ipsum dolor sit, amet consectetur adip<br>isicing elit. Magni id aperiam, possimus corporis soluta do<br>loremque voluptates consectetur nesciunt nam fugi<br>at magnam architecto, quam illo, numquam fu<br>ga adipisci omnis pariatur molestiae!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dis<br>tinctio tempore nihil harum numquam iste maiores nam adipisci ut? Consectetur eaque dignissimos, beatae<br> non quae earum maxime temporibus officia accusantium e<br>rror.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Q<br>ui a sequi mollitia fugit dicta ut repellat tempora deleniti ducimus earum laboriosam in debitis el<br>igendi, voluptatem incidunt quia rem nihil voluptate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Nisi eum veritatis ex a at possimus est unde totam corrupti perspiciatis, provident dolorum nam dolor, <br>neque blanditiis veniam officiis accusamus consequuntur!
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Deserunt, at nihil a perferendis exercitationem nulla<br> autem provident qui, est quis sed natus? Aspernatur <br>iusto facere quod amet facilis, dolorem et.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Mollitia modi tempora illum delectus. Voluptates ali<br>as enim commodi amet nobis doloremque ap<br>eriam eos optio dolore<br> ullam, officiis eaque facilis vitae quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo <br>molestiae rem tempore dolore dolor accusanti<br>um repellendus earum voluptatibus quibusdam, natus eligendi nisi reprehend<br>erit, dolorem ea ipsam aspernatur fugit <br>mollitia consequuntur.
+                    
+                    </b>
+                </p>
+                <p>
+                    <a href="#top">Torna all'inizio</a>
+                </p>
+            </section>
+
+            <section id="privacy">
+            <h2><i class="bi bi-trash"></i> sezione privacy</h2>
+                <p>
+                    <b>
+                        Questa è una sezione di esempio<br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        bla bla bla bla bla bla bla bla bla bla bla bla <br>
+                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Optio quisquam itaque eum modi dignissimos <br>tempora, voluptatem perspiciatis nemo eius corrupti incidunt aliquid, mo<br>lestias, sequi accusantium praesentium atque cum voluptat<br>e adipisci!
+                        Lorem ipsum dolor sit <br>amet consectetur, adipisicing elit. Reiciend<br>is officiis error laborum quos? Dicta fugiat provident ullam illo expl<br>icabo nihil architecto iusto? Esse voluptas neque ei<br>us maxime distinctio eos blanditiis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi volu<br>ptas, pariatur incidunt, soluta error provident sit corporis fa<br>cilis maiores quos recusandae perspiciatis perferendis <br>minus at commodi? Dolor tenetur sap<br>iente sunt.
+                        Lorem ipsum dolor sit, amet consectetur adip<br>isicing elit. Magni id aperiam, possimus corporis soluta do<br>loremque voluptates consectetur nesciunt nam fugi<br>at magnam architecto, quam illo, numquam fu<br>ga adipisci omnis pariatur molestiae!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dis<br>tinctio tempore nihil harum numquam iste maiores nam adipisci ut? Consectetur eaque dignissimos, beatae<br> non quae earum maxime temporibus officia accusantium e<br>rror.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Q<br>ui a sequi mollitia fugit dicta ut repellat tempora deleniti ducimus earum laboriosam in debitis el<br>igendi, voluptatem incidunt quia rem nihil voluptate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Nisi eum veritatis ex a at possimus est unde totam corrupti perspiciatis, provident dolorum nam dolor, <br>neque blanditiis veniam officiis accusamus consequuntur!
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Deserunt, at nihil a perferendis exercitationem nulla<br> autem provident qui, est quis sed natus? Aspernatur <br>iusto facere quod amet facilis, dolorem et.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Mollitia modi tempora illum delectus. Voluptates ali<br>as enim commodi amet nobis doloremque ap<br>eriam eos optio dolore<br> ullam, officiis eaque facilis vitae quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo <br>molestiae rem tempore dolore dolor accusanti<br>um repellendus earum voluptatibus quibusdam, natus eligendi nisi reprehend<br>erit, dolorem ea ipsam aspernatur fugit <br>mollitia consequuntur.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officiis neque doloribus necessitatibus, sed aliquid provident harum veniam blanditiis voluptatum asperiores, eius ipsa possimus architecto voluptas hic. Laudantium, cum consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae reiciendis amet ea voluptatem dignissimos iste ipsum at doloribus magni quibusdam, quas non consequuntur, natus iusto similique est ad voluptate?
+                    </b>
+                </p>
+                <p>
+                    <a href="#top">Torna all'inizio</a>
+                </p>
+            </section>
+            <hr>
+            <h1>Tabella</h1>
+            <p>th = table header</p>
+            <p>td = table data</p>
+            <table>
+                <tr>
+                    <th>intestazione 1</th>
+                    <th>intestazione 2</th>
+                </tr>
+                <tr>
+                    <td>cella 1</td>
+                    <td>cella 2</td>
+                </tr>
+                <tr>
+                    <td>cella 3</td>
+                    <td>cella 4</td>
+                </tr>
+            </table>
+        
+        <div class="invisible">
+        <!--uso di div invece di tabelle-->
+        <h1>div</h1>
+        <div>
+            <div class="box1">Box1</div>
+            <div class="box1">Box2</div>
+            <div class="box1">Box3</div>
+            <div id="box4">Box4</div>
+            <div id="box4">Box5</div>
+        </div>
+        </div>
+
+        <!--uso di grid-->
+        <h1>div</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    1 of 6
+                </div>
+                <div class="col-2">
+                    2 of 6
+                </div>
+                <div class="col-2">
+                    3 of 6
+                </div>
+                <div class="col-2">
+                    4 of 6
+                </div>
+                <div class="col-2">
+                    5 of 6
+                </div>
+                <div class="col-2">
+                    6 of 6
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    1 of 6
+                </div>
+                <div class="col-2">
+                    2 of 6
+                </div>
+                <div class="col-2">
+                    3 of 6
+                </div>
+                <div class="col-2">
+                    4 of 6
+                </div>
+                <div class="col-2">
+                    5 of 6
+                </div>
+                <div class="col-2">
+                    6 of 6
+                </div>
+            </div>
+        </div>
+
+        </main>
+        <a href="#top">
+        <footer>
+            <!--footer contiene indirizzo partita iva copyright ed altre informazioni-->
+            <p>questo è il footer</p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="bi bi-wordpress fs-1 Primary"></i>
+                    </div>
+                    <div class="col-4">
+                        <i class="bi bi-xbox fs-1 Primary"></i> 
+                    </div>
+                    <div class="col-4">
+                        <i class="bi bi-twitch fs-1 Primary"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </a>
+    </div>
+    </div>
+    </body>
+</html>

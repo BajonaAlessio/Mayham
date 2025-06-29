@@ -1,0 +1,35 @@
+header{
+  position: sticky !important;
+  top:0;
+  z-index: 100;
+}
+
+body {
+    /*FONT*/
+  font-family: "Exo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 486;
+  font-style: normal;
+    /******/
+  background-color: #FCECDD;
+}
+
+p{
+  font-size: medium;
+}
+
+#logo{
+  text-align: left !important;
+}
+
+a, h1, h5, p{
+  color: #00809D !important;
+}
+
+a:hover{
+  color: #FF7601 !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}

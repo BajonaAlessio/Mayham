@@ -1,0 +1,13 @@
+{
+  "codice": "1",
+  "nome": "penna",
+  "disponibile": false,
+  "quantita": 0,
+  "categorie": [
+    "penna non penna aaaa"
+  ],
+  "posizione": {
+    "magazzino": "magazzino",
+    "scaffale": 1
+  }
+}

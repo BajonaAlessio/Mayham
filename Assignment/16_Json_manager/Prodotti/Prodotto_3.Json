@@ -1,0 +1,13 @@
+{
+  "codice": "3",
+  "nome": "aaa",
+  "disponibile": true,
+  "quantita": 2,
+  "categorie": [
+    "a"
+  ],
+  "posizione": {
+    "magazzino": "magazzino",
+    "scaffale": 1
+  }
+}

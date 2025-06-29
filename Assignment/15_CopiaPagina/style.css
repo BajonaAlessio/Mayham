@@ -1,0 +1,51 @@
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover , .custom-link-alti a:hover{
+    text-decoration: none;
+    color: #777 !important;
+}
+
+a, h3, small{
+    color: white !important;
+}
+.Custom-bianco{
+    color: white !important;
+}
+.custom-searchbar{
+    border: 0;
+}
+.dropdown-item{
+    color: #000 !important;
+}
+
+.disabled{
+    color: #949494 !important;
+}
+
+.custom-logo{
+
+    border: 10px solid #FFF;
+    border-radius: 50%;
+    padding: 10px
+    /*font-size: 1em;*/
+}
+
+/*Bordi prima navbar*/
+.custom-bordo-destro{
+    border-right: 1px solid #FFF;
+}
+.custom-bordo-sinistro{
+    border-left: 1px solid #FFF;
+}
+

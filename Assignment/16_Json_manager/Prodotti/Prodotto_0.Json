@@ -1,0 +1,13 @@
+{
+  "codice": "0",
+  "nome": "zaino",
+  "disponibile": true,
+  "quantita": 1,
+  "categorie": [
+    "portabiccheri"
+  ],
+  "posizione": {
+    "magazzino": "0",
+    "scaffale": 0
+  }
+}

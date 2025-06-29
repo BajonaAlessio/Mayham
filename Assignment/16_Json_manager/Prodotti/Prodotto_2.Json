@@ -1,0 +1,13 @@
+{
+  "codice": "2",
+  "nome": "coso",
+  "disponibile": true,
+  "quantita": 2,
+  "categorie": [
+    "no"
+  ],
+  "posizione": {
+    "magazzino": "0",
+    "scaffale": 0
+  }
+}

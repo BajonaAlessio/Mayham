@@ -1,0 +1,199 @@
+/* Impostazioni base */
+body {
+    font-family: 'Exo', sans-serif;
+    margin: 20px; /*il margine è lo spazio esterno */
+    padding: 0px; /*il padding è lo spazio interno */
+    line-height: 1.6; /*altezza della linea */
+    background-color: #3c6506ba;
+    color: #650606ba;
+}
+
+
+
+/* NAVBAR */
+nav {
+    margin: 14px 0px 3vw 0;
+    padding: 10px;
+    text-align: right; /* altri valori: left, right, justify */
+
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 15px 25px;
+    color: #3c6506ba;    
+    font-weight: bolder;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: #6dfb00;
+}
+
+/* Sezioni */
+section {
+    padding: 40px 20px;
+    background-color: rgba(186, 22, 22, 0.269);
+    border: 1px dashed #3c6506ba;
+    margin: 0 1vw 0 1vw;
+}
+
+a{
+    color: #3c6506ba;
+    transition: color 0.3s;
+}
+a:hover{
+    color: #6dfb00;
+}
+
+section:nth-child(odd){
+    background-color: #3c6506ba; /* nth-child seleziona gli elementi in base alla loro posizione */ 
+    border: 1px dashed rgba(186, 22, 22, 0.269);
+}
+
+/* Titoli */
+h1 {
+    margin-top: 0;
+    color: #ab0808f1;
+    font-size: 4vw;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ab0808f1;
+    font-size: 3vw;
+}
+
+h3 {
+    margin-top: 0;
+    color: #ab0808f1;
+    font-size: 2.5vw;
+}
+
+h4 {
+    margin-top: 0;
+    color: #ab0808f1;
+    font-size: 2vw;
+}
+/* Paragrafi */
+p{
+    margin: 1em 0; /* em è l'unità di misura relativa alla dimensione del font */
+    font-size: 1.5vw;
+}
+
+ul, ol{
+    margin-left: 2em;
+}
+
+header{
+    position: sticky; /* sticky permette di mantenere l'header disponibile durante lo scroll */
+    top:0; /* top specifica la distanza dal bordo superiore della pagina */
+    z-index: 100; /* z-index specifica l'ordine di sovrapposizione degli elementi */
+    border-bottom: 3px solid #3c6506ba;
+    margin: -20px -20px -20px -20px; 
+    background-color: #650606ba;
+}
+
+header:hover{
+    background-color: #ab0808f1;
+    color: #6dfb00;
+}
+
+
+header h1{
+     color:#3c6506ba;
+}
+
+main{
+    max-width: 900px;
+    margin: auto; /*margin centra l'elemento verticalmente e orizzontalmente */
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* stili tabella */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #3c6506ba;
+    border: #650606ba;
+}
+th, td{
+    border: 1px solid #650606ba;
+    text-align: center;
+    padding: 8px;
+} 
+
+/*stili div*/
+div{
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #3c6506ba;
+}
+
+footer{
+    background-color: #650606ba;
+    color: #3c6506ba;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    font-weight: bolder;
+    margin: -20px -20px -20px -20px;
+}
+footer:hover{
+    background-color: #ab0808f1;
+}
+
+/*stile personalizzato*/
+/* richiamo lo stile con il punto perché nell'html ho usato class="" */
+/*richiamo lo stile con il # perché nell'html ho usato l'id */
+.box1{
+    background-color: #6dfb00;
+}
+#box4{
+    background-color: #6dfb00;
+}
+
+.btn-primary{
+    background-color: aqua !important;
+}
+
+.btn-secondary{
+    background-color: aquamarine !important;
+}
+
+.btn-custom{
+    background-color: #0379d9 !important;
+}
+
+/* Tablet grande (max-width 1200px) */
+@media (max-width: 1200px) {
+    body{
+    background-color: #ffffff;
+    }
+}
+
+@media (max-width: 992px) {
+    body{
+    background-color: #4d4c4cba;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+    background-color: #222222;
+    }
+}
+
+@media (max-width: 576px){
+    body{
+    background-color: #000000;
+    }
+}
+
