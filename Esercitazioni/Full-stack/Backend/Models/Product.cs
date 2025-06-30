@@ -6,6 +6,7 @@ namespace Backend.Models // Backend/Models/Product.cs
         public int Id { get; set; } //i metodi e le proprietà public possono essere accessibili da altri componenti
         public string Name { get; set; }
         public decimal Price { get; set; }
+        public int Quantita { get; set; }
     }
     // Backend/Models/Product.cs
 }

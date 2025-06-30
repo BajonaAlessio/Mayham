@@ -53,4 +53,47 @@ public class ProductsController : ControllerBase //estendiamo la classe base con
         return p;
     }
 
+
+    [HttpPost]
+    public ActionResult<Product> Post([FromBody] Product prod)
+    {
+        //Aggiunge il prodotto e ottienel'istanza creata
+        Product created = _service.Add(prod);
+
+        //Restituisce 201 Created con header Location che punta a GET api/product{id}
+        return CreatedAtAction(
+            actionName: nameof(Get),  //nome dell'azione che gestisce la richiesta GET per ottenere un prodotto
+            routeValues: new { id = created.Id }, //aggiungo il nuovo prodotto alla lista dei prodotti
+            value: created //il valore restituito è il prodotto creato
+        );
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult Put(int id, [FromBody] Product prod)
+    {
+        bool success = _service.Update(id, prod);
+        if (success == false)
+        {
+            return NotFound();
+        }
+        else
+        {
+            return NoContent();
+        }
+    }
+
 }
+
+/*      COMANDI CURL
+curl -X POST \
+http://localhost:5139/api/products \
+-H "Content-Type: application/json" \
+-d '{"name": "Matita", "price": 0.50}'
+
+
+curl -X PUT \
+http://localhost:5139/api/products/3 \
+-H "Content-Type: application/json" \
+-d '{"id": 3, "name": "Matita HB", "price": 1.50, "Quantita": 53}'
+*/
+

@@ -9,8 +9,8 @@ namespace Backend.Services
         //in pratica voglio che l'elenco dei prodotti sia accessibile sono all'interno di questa classe
         {
             // elenco dei prodotti iniziali
-            new Product { Id = 1, Name = "Penna", Price = 1.20M },
-            new Product { Id = 2, Name = "Quaderno", Price = 2.50M }
+            new Product { Id = 1, Name = "Penna", Price = 1.20M, Quantita = 10 },
+            new Product { Id = 2, Name = "Quaderno", Price = 2.50M, Quantita = 5 }
         };
 
         // restituisco tutti i prodotti, dato che erano privati _products li rendo pubblici
@@ -46,9 +46,52 @@ namespace Backend.Services
         }
 
         //metodo per aggiungere un prodotto alla lista
+        public Product Add(Product newProduct)
+        {
+            int id = 0;
+            foreach (var product in _products)
+            {
+                if (id <= product.Id)
+                    id = product.Id + 1;
+            }
+            newProduct.Id = id;
+
+            _products.Add(newProduct);
+            return newProduct;
+        }
 
         //metodo per eliminare un prodotto specifico in base all'ID
+        public void DeleteProduct(int id)//<---
+        {
+            _products.RemoveAt(id);
+        }
 
         //metodo per modificare un prodotto specifico in base all'ID
+        public void ModificaProdotto(Product product, int id)//<---
+        {
+            _products.RemoveAt(id);
+            product.Id = id;
+            _products.Add(product);
+        }
+
+        public bool Update(int id, Product updatedProduct)
+        {
+            Product? existing = null;
+            foreach (var p in _products)
+            {
+                if (p.Id == id)
+                {
+                    existing = p;
+                    break;
+                }
+            }
+            if (existing == null)
+            {
+                return false;
+            }
+            existing.Name = updatedProduct.Name;
+            existing.Price = updatedProduct.Price;
+            return true;
+        }
     }
 }
