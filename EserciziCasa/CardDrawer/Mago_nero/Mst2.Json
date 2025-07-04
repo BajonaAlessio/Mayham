@@ -1,0 +1,8 @@
+{
+    "Nome": "Dark Magician",
+    "Testo": "The ultimate wizard in terms of attack and defense.",
+    "Attributo" : "Dark",
+    "Tipo" : "Spellcaster",
+    "Atk" : 2500,
+    "Def" : 2100
+}

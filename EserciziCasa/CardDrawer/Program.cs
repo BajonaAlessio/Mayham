@@ -1,5 +1,6 @@
 ﻿// libraries
-using Models;
+using CardDrawer.Models;
+using CardDrawer.Deck;
 using Newtonsoft.Json;
 
 //data structures
@@ -46,11 +47,19 @@ int Menu(string[] opzioni)
 void CreaDeck()
 {
     EsisteCartella(InserisciNome());
+    //resto del programma...
 }
 
 void CaricaDeck()
 {
-
+    string nomeDeck = InserisciNome();
+    while (!Directory.Exists(nomeDeck))
+    {
+        Console.WriteLine("deck non trovato, inserisci un nome valido:");
+        nomeDeck = InserisciNome();
+        Console.WriteLine($"debug test: {nomeDeck}");
+    }
+    //resto della funzione
 }
 
 void EliminaDeck()

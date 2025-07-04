@@ -1,0 +1,8 @@
+{
+    "Nome": "Dark Magician Girl",
+    "Testo": "Gains 300 ATK for every 'Dark Magician' or 'Magician of Black Chaos' in the GYs.",
+    "Attributo" : "Dark",
+    "Tipo" : "Spellcaster",
+    "Atk" : 2000,
+    "Def" : 1700
+}

@@ -1,4 +1,4 @@
-namespace Models
+namespace CardDrawer.Models
 {
     public abstract class Card
     {

@@ -20,7 +20,7 @@ public class ProductsController : ControllerBase //estendiamo la classe base con
     //_service è il nome del campo, che segue la convenzione di denominazione per o campi privati
 
     //public ProductsController() => _service = service;
-    public ProductsController(ProductService service) //l'argomento del costruttore è il srvizio che gestisce i prodotti in questo caso ProductService
+    public ProductsController(ProductService service) //l'argomento del costruttore è il servizio che gestisce i prodotti in questo caso ProductService
     {
         //il throw serve a lanciare un'eccezione se il servizio è null
         //l'operatore di coalescenza restituisce il valore a sinistra se non è null, altrimenti restituisce il valore a destra
