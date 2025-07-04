@@ -1,4 +1,5 @@
-﻿//app con menù e funzioni di base
+﻿using Newtonsoft.Json;
+//app con menù e funzioni di base
 //le funzioni sono dei principali tipi (void, int, con dati complessi di ritorno)
 
 //ci sono due tipi di metodi dei quali uno è statico
@@ -21,26 +22,39 @@ while (true)
     Console.WriteLine("3. esempio di funzione con dati complessi");
     Console.WriteLine("0. esci");
     Console.Write("scegli un opzione: ");
-    string scelta = Console.ReadLine();
-    switch (scelta)
-    {
-        case "1":
-            EsempioVoid();
-            break;
-        case "2":
-            EsempioConAzione();
-            break;
-        case "3":
-            EsempioDatiComplessi();
-            break;
-        case "0":
-            Console.WriteLine("Uscita dal programma");
-            return;
-        default:
-            Console.WriteLine("opzione non valida");
-            Console.ReadKey();
-            break;
-    }
+    string scelta = Console.ReadLine()?.Trim();
+    //con il ? evito il warning del dato che potrebbe essere null
+
+    if (scelta == "1")
+        EsempioVoid();
+    else if (scelta == "2")
+        EsempioConAzione();
+    else if (scelta == "3")
+        EsempioDatiComplessi();
+    else
+        break;
+
+    /*
+        switch (scelta)
+        {
+            case "1":
+                EsempioVoid();
+                break;
+            case "2":
+                EsempioConAzione();
+                break;
+            case "3":
+                EsempioDatiComplessi();
+                break;
+            case "0":
+                Console.WriteLine("Uscita dal programma");
+                return;
+            default:
+                Console.WriteLine("opzione non valida");
+                Console.ReadKey();
+                break;
+        }
+        */
 }
 
 //una funzione void che non restituisce nulla
@@ -85,11 +99,52 @@ static int Somma(int x, int y)
 
 
 //funzione che gestisce dati complessi: elenco di libri
+//la versione 2 deve leggere i dati da un file json
+//deve essere implementata la gestione degli errori per la lettura dei file json
 static void EsempioDatiComplessi()
 {
     Console.Clear();
     Console.WriteLine("---Funzione con dati complessi---");
 
+    string percorsoFile = "libri.json";
+
+    List<Libro> elencoLibri;
+
+    //prova a leggere il file json implementando la gestione delle eccezioni
+    try
+    {
+        //in questo blocco mettiamo il codice che deve essere provato
+        if (!File.Exists(percorsoFile))
+            throw new FileNotFoundException("File non trovato", percorsoFile);
+        string contenutoJson = File.ReadAllText(percorsoFile);
+        elencoLibri = JsonConvert.DeserializeObject<List<Libro>>(contenutoJson);
+        if (elencoLibri == null)
+            throw new JsonException("Deserializzazione tornata null.");
+    }
+    catch (FileNotFoundException ex)//catch serve per gestire le eccezioni specifiche
+    {
+        Console.WriteLine($"errore: {ex.Message} ({ex.FileName})");
+        Console.WriteLine("Verifica che il file esista nella cartella dell'eseguibile");
+        Console.WriteLine("Premi un tasto per tornare al menu..");
+        Console.ReadKey();
+        return;
+    }
+    catch (JsonException ex)
+    {
+        Console.WriteLine($"errore: {ex.Message}");
+        Console.WriteLine("Conrolla il formato del file Json");
+        Console.WriteLine("Premi un tasto per tornare al menu..");
+        Console.ReadKey();
+        return;
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"errore: {ex.Message}");
+        Console.WriteLine("Premi un tasto per tornare al menu..");
+        Console.ReadKey();
+        return;
+    }
+    /*
     //creo elenco di libri
     var libri = new List<Libro>
     {
@@ -97,9 +152,10 @@ static void EsempioDatiComplessi()
         new Libro("1984", 1949, "distopico", false),
         new Libro("Il signore degli anelli", 1954, "Storico", true)
     };
+    */
 
     //filtro i libri letti usando la funzione FiltraLibriLetti
-    var libriLetti = FiltraLibriLetti(libri);
+    var libriLetti = FiltraLibriLetti(elencoLibri);
 
     //stampo i libri letti
     Console.WriteLine("Libri già letti:");
@@ -154,3 +210,26 @@ public class Libro
         Letto = letto;
     }
 }
+
+/* file json:
+[
+    {
+        "Titolo": "Il nome della rosa",
+        "Anno": 1980,
+        "Genere": "Storico",
+        "Letto": true
+    },
+    {
+        "Titolo": "1984",
+        "Anno": 1949,
+        "Genere": "Distopico",
+        "Letto": false
+    },
+    {
+        "Titolo": "Il signore degli anelli",
+        "Anno": 1954,
+        "Genere": "Fantasy",
+        "Letto": true
+    }
+]
+*/
