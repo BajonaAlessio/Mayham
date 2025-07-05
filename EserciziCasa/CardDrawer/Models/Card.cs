@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 namespace CardDrawer.Models
 {
     public abstract class Card
@@ -9,6 +10,13 @@ namespace CardDrawer.Models
         {
             Nome = "Dark Magician";
             Testo = "The ultimate wizard in terms of attack and defense.";
+        }
+
+        public void SalvaCarta(string dir, int id, string type)
+        {
+            string path = @$"{dir}\{type}{id}.Json";
+            File.Create(path).Close();
+            File.WriteAllText(path, JsonConvert.SerializeObject(this , Formatting.Indented));
         }
     }
 
